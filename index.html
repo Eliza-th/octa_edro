@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- script de A-Frame version1 1.0.0 -->
+		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+		<!-- script de AR.JS con soporte de marker + location -->
+		<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+	</head>
+    <body style="margin : 0px; overflow: hidden;">
+        <a-scene embedded arjs>
+			<a-marker preset="hiro">
+				<a-octahedron color="#8200FF" radio="7"></a-octahedron>
+				<a-text value="Hola:)" position="0 0 -3" color="04FF00" aling="center" material="opacity.4"></a-text>
+			</a-marker>
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
